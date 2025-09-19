@@ -58,7 +58,7 @@ for beam in beams:
         for opt in [1,2,3,4]:
             print(f"\n--- Option {opt} for trial {trial} ---")
             # New collider for each option (keeps runs independent)
-            collider = xt.Multiline.from_json('HL_NOBB_september_CC_flatmachine.json')
+            collider = xt.Multiline.from_json('HL_15cm_0cross.json')
             collider.build_trackers()
             tw_ref = collider[beam].twiss()
             # Check that qx and qy are as expected before applying errors
